@@ -47,7 +47,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner?board)
   moves = won?(board)
   if moves.is_a? Array
     if moves[0] == "O"
@@ -56,7 +56,5 @@ def winner?(board)
       return "X"
     end
   end
-    return nil
-  end
-
+  return nil
 end
