@@ -50,7 +50,7 @@ end
 def winner(board)
   moves = won?(board)
   if moves.is_a? Array
-    if moves[0] == "O"
+    if board[moves[0]] == "O"
       return "O"
     else
       return "X"
